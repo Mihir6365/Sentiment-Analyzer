@@ -56,7 +56,13 @@ var hindi_Language = {
         'सुबह': 2,
         'मिलेंगे': 1,
         'खुशी': 4,
-        'खुशी': 4
+        'खुशी': 4,
+        'मोक्ष': 4,
+        'आशा': 4,
+        'सुंदर': 4,
+        'पराक्रम': 4,
+        'शक्ति': 3,
+        'ख्याल': 4
     },
     scoringStrategy: {
         apply: function(tokens, cursor, tokenScore) {

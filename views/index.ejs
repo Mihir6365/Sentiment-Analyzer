@@ -1,32 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html style="font-size: 16px;">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sentiment Analyzer</title>
-    <link rel="shortcut icon" href="/css/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="utf-8">
+    <meta name="keywords" content="SENTIMENT ANALYZER, SENTIMENT ANALYSIS">
+    <meta name="description" content="">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/nicepage.css" media="screen">
+    <link rel="stylesheet" href="/css/Home.css" media="screen">
+    <!-- <script class="u-script" type="text/javascript" src="/css/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="/css/nicepage.js" defer=""></script> -->
+    <meta name="generator" content="Nicepage 4.12.21, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+
+
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
 </head>
 
-<body>
-    <div class="logoimg">
-        <img src="/css/logo.jpg" alt="LOGO">
-    </div>
-    <div class="container">
-        <div class="container-lg">
-            <h1 style=>SENTIMENT ANALYSIS</h1>
-            <form method="get" class="form">
-                <input type="text" name="input" placeholder="Enter your post" id="input">
-                <br>
-                <input type="submit" id="btn" class="btn btn-primary">
-            </form>
-            <h1 class="output">
-                <%= score %>
-            </h1>
+<body data-home-page="Home.html" data-home-page-title="Home" class="u-body u-xl-mode">
+    <header class="u-clearfix u-header u-header" id="sec-59ad">
+        <div class="u-clearfix u-sheet u-valign-top-xs u-sheet-1">
+            <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="275" data-image-height="183">
+                <img src="/css/logo.jpg" class="u-logo-image u-logo-image-1">
+            </a>
         </div>
-    </div>
+    </header>
+    <section class="u-align-center u-clearfix u-image u-shading u-section-1" src="" data-image-width="1600" data-image-height="900" id="sec-c728">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <h1 class="u-text u-title u-text-1">SENTIMENT ANALYZER</h1>
+
+
+
+            <div class="u-expanded-width-sm u-expanded-width-xs u-form u-form-2">
+                <form method="get" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 10px;height: 200px;">
+                    <div class="u-align-center u-form-group">
+                        <label>Enter the language</label>
+                        <br>
+                        <select name="language" style="color: black; width: 30%; height: 40px;">
+                            <option>English</option>
+                            <option>Hindi</option>
+                        </select>
+                    </div>
+                    <div class="u-form-group u-form-message">
+                        <label for="message-170e" class="u-label">Post</label>
+                        <input type="text" name="input" placeholder="Enter your post" id="input" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" style="height: 50px;">
+                    </div>
+                    <div class="u-align-center u-form-group u-form-submit" style="padding: 30px;">
+                        <input type="submit" class="u-btn u-btn-submit u-button-style" id="btn">
+                    </div>
+
+                </form>
+
+
+                <h1 class="output" id="score" style="margin-top: 30%;">
+                    <%= score %>
+                </h1>
+
+
+
+                <!-- <div class="u-expanded-width-sm u-expanded-width-xs u-form u-form-3">
+                <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form-2" style="padding: 10px;">
+
+
+                    <div class="u-form-group u-form-select u-form-group-5">
+                        <label for="select-9301" class="u-label">Is this the result you predicted? </label>
+                        <div class="u-form-select-wrapper">
+                            <select id="select-9301" name="select" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                  <option value="YES">YES</option>
+                  <option value="NO">NO</option>
+                </select>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="u-align-center u-form-group u-form-submit">
+                        <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
+                        <input type="submit" value="submit" class="u-form-control-hidden">
+                    </div>
+                    <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                    <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+                    <input type="hidden" value="" name="recaptchaResponse">
+                </form>
+            </div> -->
+            </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-5232">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+                <div class="u-layout">
+                    <div class="u-layout-row">
+                        <div class="u-container-style u-image u-layout-cell u-size-30 u-image-1" data-image-width="1368" data-image-height="632">
+                            <div class="u-container-layout u-container-layout-1"></div>
+                        </div>
+                        <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                            <div class="u-container-layout u-container-layout-2">
+                                <h2 class="u-align-center u-text u-text-default u-text-1">HOW IT WORKS&nbsp;</h2>
+                                <ol class="u-align-left u-text u-text-2">
+                                    <li>
+                                        <span style="font-size: 1.25rem;">Select the language of your post</span>
+                                    </li>
+                                    <li>
+                                        <span style="font-size: 1.25rem;">Enter your post </span>
+                                    </li>
+                                    <li>
+                                        <span style="font-size: 1.25rem;">Press the submit button </span>
+                                    </li>
+                                    <li>
+                                        <span style="font-size: 1.25rem;">You will get your SENTIMENT SCORE.&nbsp;</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-7ced">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <p class="u-small-text u-text u-text-variant u-text-1">Created By Kaustubh Raut, Mihir Savla &amp; Piruthviraj Patil</p>
+        </div>
+    </footer>
+
 </body>
 
 </html>
